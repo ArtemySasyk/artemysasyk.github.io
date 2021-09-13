@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Задание 1</title>
+</head>
+<body>
+
+<h1>Задание 1</h1>
+<h2 id="head1">Нумерованный список гиперссылок</h2>
+<ol>
+<li><a href="http://ru.dotabuff.com">Абсолютная гиперссылка на главную страницу сайта</a></li>
+<li><a href="https://ru.dotabuff.com">Абсолютная гиперссылка на главную страницу сайта в протоколе https</a></li>
+<li><a href="ftp://adidas.ru/files/file.html">Ссылка на файл на сервере FTP без авторизации</a></li>
+<li><a href="ftp://user:123@adidas.ru/files/file.html">Ссылка на файл на сервере FTP с авторизацией</a></li>
+<li><a href="http://ru.dotabuff.com#anchor">Ссылка на фрагмент страницы некоторого сайта</a></li>
+<li><a href="#top">Ссылка на фрагмент текущей страницы</a></li>
+<li><a href="http://www.adidas.ru/muzhchiny-obuv|odezhda">Ссылка с двумя параметрами в URL</a></li>
+<li>
+Список ссылок основной навигации сайта с подписями title
+<ul>
+<li><a href="#head1" title="Нумерованный список гиперссылок">Нумерованный список гиперссылок</a></li>
+<li><a href="#head2" title="Форма">Форма</a></li>
+</ul>
+</li>
+<li><a>Ссылка без href</a></li>
+<li><a href="">Ссылка с пустым href</a></li>
+<li><a href="http://ru.dotabuff.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+<noindex> <a href="http://ru.dotabuff.com"> не индексируется </noindex> </a></li>
+<li><p>Контекстная <a href="http://ru.dotabuff.com">ссылка</a> в тексте абзаца</p></li>
+<li>
+Ссылка-изображение<br/>
+<a href="http://ru.dotabuff.com"><img src="https://im0-tub-ru.yandex.net/i?id=a13e8bc9bac244994ee2e086a723af9b&n=13" width="310" height="242" alt=Алёна Богданова"></a>
+</li>
+<li>
+Ссылки из прямоугольных и круглых областей картинки<br/>
+<img src="https://catherineasquithgallery.com/uploads/posts/2021-02/1612491860_177-p-mish-na-serom-fone-240.jpg" width="310" height="242" alt="Описание картинки" usemap="#mymap">
+<map name="mymap">
+<area shape="rect" coords="40,25,90,150" href="http://zen.yandex.ru/media/id/5dab772b97b5d400b222e76c/kak-byt-esli-v-dom-stali-prihodit-myshi-5db28cf23d873600ae683f97" alt="Прямоугольная область">
+<area shape="circle" coords="100,210,25" href="http://vk.com/alyonabogdanovaa" alt="Круглая область">
+</map>
+</li>
+<li><a href="page">Относительная ссылка на страницу в текущем каталоге</a></li>
+<li><a href="./about/page">Относительная ссылка на страницу в каталоге about</a></li>
+<li><a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+<li><a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+<li><a href="/">Сокращенная ссылка на главную</a></li>
+<li><a href="/pages/page">Сокращенная ссылка на внутреннюю</a></li>
+
+
+
+
+
+
+<a id="top"></a>
+</ol>
+<h2 id="head2">Форма</h2>
+<head>
+<title>=форма HTML</title>
+</head>
+
+<body>
+
+<h1>форма HTML</h1>
+
+<form action="/"
+method="POST">
+
+<label>
+Имя:<br />
+<input name="field-name-1"
+value="напиши имя" />
+</label><br />
+
+<label>
+email:<br />
+<input name="field-email"
+value="test@example.com"
+type="email" />
+</label><br />
+
+<label>
+дата:<br />
+<input name="field-date"
+value="2019-08-13"
+type="date" />
+</label><br />
+
+<label>
+голова чтобы думать, ноги чтобы?:<br />
+<textarea name="field-name-2">допиши текст песни</textarea>
+</label><br />
+
+<label>
+пол :<br />
+<select name="field-name-3">
+<option value="Значение1">мужчина</option>
+<option value="Значение2" selected="selected">женщина</option>
+<option value="Значение3">кот</option>
+</select>
+</label><br />
+
+<label>
+выбери расу):
+<br />
+<select name="field-name-4[]"
+multiple="multiple">
+<option value="Значение1">человек</option>
+<option value="Значение2" selected="selected">инопричеленец</option>
+<option value="Значение3" selected="selected">кот</option>
+</select>
+</label><br />
+
+
+
+соглашение:<br />
+<label><input type="checkbox" checked="checked"
+name="check-1" />
+согласине на рабство</label><br />
+
+
+<input type="submit" value="Отправить" />
+</form>
+</body>
+</html>
